@@ -1,26 +1,26 @@
 #include <stdio.h>
 
-float usAlma(float taban, float ust);
+float exp(float base, float top);
 int main() {
-    float ust=0 , taban=0;
-    float sonuc=1;
-    printf("lutfen bir sayi girin:\n");
-    scanf("%f %f",&taban,&ust);
-    sonuc=usAlma( taban, ust);
-    printf("sonuc=%f\n",sonuc);
+    float top=0 , base=0;
+    float conclusion=1;
+    printf("please enter a number:\n");
+    scanf("%f %f",&base,&top);
+    conclusion=exp( base, top);
+    printf("sonuc=%f\n",conclusion);
     return 0;
 }
-float usAlma(float taban , float ust) {
-    float sonuc=1;
-    if (ust<0) {
-        for (int i=0;i<-ust;i++) {
-            sonuc*=1/taban;
+float exp(float base , float top) {
+    float conclusion=1;
+    if (top<0) {
+        for (int i=0;i<-top;i++) {
+            conclusion*=1/base;
         }
     }
     else {
-        for (int i=0;i<ust;i++) {
-            sonuc*=taban;
+        for (int i=0;i<top;i++) {
+            conclusion*=base;
         }
     }
-    return sonuc;
+    return conclusion;
 }
