@@ -1,2 +1,2 @@
-# UsHesaplama
-fonksiyon içerisinde alınan iki parametreden biri üs biri taban değeri olma durumunda yapılan kuvvet hesaplama programı
+# exponentCalculation
+A program that calculates the force when one of the two parameters received within a function is the exponent and the other is the base value.
